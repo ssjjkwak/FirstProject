@@ -1,0 +1,18 @@
+html, body{ width: 100%; height: 100%; }
+* { padding: 0; margin: 0; }
+table { border-collapse: collapse; }
+
+#wrapper{ width: 100%; height: 100%; }
+
+
+#header{ width: 800px; margin: 0 auto 0 auto; padding: 100px 0 50px 0; }
+#header #prevMonth{ float: left; width: 90px; height:90px; }
+#header .current_year_month { font-size: 40px; text-align: center; font-weight: bold; }
+#header #nextMonth { float: right; width: 90px; height: 90px; }
+
+#calWrap { width: 800px; margin: auto; }
+#calWrap table{ width: 100%; }
+#calWrap table th{ background-color: #f7f7f7; }
+#calWrap table th, #calWrap table td{ height: 80px; text-align: center; vertical-align: middle; font-size: 18px; border: 1px solid #ddd; }
+#calWrap table th:first-child, #calWrap table td:first-child{ color: red; }
+#calWrap table th:last-child, #calWrap table td:last-child{ color: blue; }

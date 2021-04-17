@@ -1,0 +1,19 @@
+/*코드다이어리, 각각 다이어리항목들 css설정*/
+
+#lnb { float: left; width: 200px; display: inline; padding-top: 20px; }
+#lnb ul { padding: 20px 13px 0 13px; }
+#lnb ul li { font-size: 30px; list-style-type: circle; padding-top: 20px; }
+
+
+#codeWrap {float: right; width: 950px; position: relative; border-style: groove; display: inline; margin-left: 20px; margin-top: 40px;  }
+#codeWrap iframe { position: relative; width: 100%; min-height: 800px; display: inline; float: right;   }
+
+
+#explain {display: inline;  font-size: 43px; padding: 20px 10px 0 10px; font-family: 'Nanum Pen Script', cursive; }
+
+
+#arrow { padding: 270px 0 0 440px; }
+#arrow_ex { padding-left: 700px; padding-top: 40px; font-family: 'Black Han Sans', sans-serif; font-size: 60px; }
+
+
+

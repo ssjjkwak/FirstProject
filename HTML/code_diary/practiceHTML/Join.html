@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>네이버 : 회원가입</title>
+    <style>
+        html, body{ padding: 0; margin: 0; width: 100%; height: 100%; }
+        body{
+            background-color: #f5f6f7;
+        }
+
+        ul, li { list-style-type: none; padding: 0; margin: 0;  }
+
+        h1, logo{
+            width: 240px; height: 44px;
+            margin-left: auto; margin-right: auto;
+            background-image: url("naver logo/m_naver_logo_20191126.png");
+            background-repeat: no-repeat;
+            background-size: 220px auto;
+            background-position: 0 0 ;
+        }
+        h2{ font-size: 17px; font-weight: normal; }
+
+        .necessary{
+            color: #03c75a ;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .not_necessary{
+            color: gray;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .item_box label {font-weight: bold; }
+        .item_box input { width: 460px; height: 51px; background-color: white; border: 1px solid #dadada; }
+        .item_box input.width146{ width: 146px; }
+        .item_box input.width335{ width: 335px; }
+        .item_box select { width: 460px; height: 51px; background-color: white; border: 1px solid #dadada; }
+        .item_box select.width146{ width: 146px; }
+
+
+        .item_box a.cert_btn { display: inline-block;
+            width: 105px;
+            padding-top: 17px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            background-color: #03c75a; color: white; font-size: 14px; }
+
+        .item_box .item_description { text-align: right; margin-top:  -40px; margin-right: 16px; }
+
+
+
+
+        .btn_container button{ width: 460px; height: 61px; color: white; font-size: 20px; border: none; }
+        .btn_container button#cancelBtn{ background-color: gray; }
+        .btn_container button#confirmBtn{ background-color: #03c75a; }
+
+        .description{ font-size: 12px; text-align: center;}
+
+        #footer li{ display: inline; font-size: 14px; }
+        #footer ul{ display: inline; }
+        #footer .corporation {text-align: center; font-size: 12px }
+        #footer { text-align: center;}
+
+        #wrapper{ width: 460px; margin-left: auto; margin-right: auto; }
+
+        #header { text-align: right; }
+
+
+
+
+    </style>
+</head>
+<body>
+<!-- wrapper 시작 -->
+
+<div id="wrapper">
+
+    <!-- form 시작 -->
+    <form action="Join_confirm.html" method="get">
+        <!-- header 시작 -->
+
+        <div id="header">
+
+
+            <h1 class="logo" >
+                <!--<img src="WebstormProjects/naver logo/m_naver_logo_20191126.png" alt="네이버 로고입니다.">-->
+
+            </h1>
+
+            <br>
+        </div>
+        <!-- header 끝 -->
+        <!-- content 시작 -->
+        <div id="content">
+
+            <div class="item_box">
+                <p>
+                <label for="userId">아이디</label>
+                </p>
+                    <input type="text" id="userId">
+                  <div class="item_description">
+                      <span>@naver.com</span>
+                  </div>
+            </div>
+
+            <br>
+            <div class="item_box">
+                <p>
+                    <label for="userPw">비밀번호</label>
+                </p>
+                <input type="text" id="userPw">
+                <div class="item_description">
+                    <span>&#191;</span>
+
+                </div>
+
+            </div>
+
+            <br>
+            <div class="item_box">
+                <p>
+                    <label for="userPwConfirm">비밀번호 재확인</label>
+                </p>
+                <input type="text" id="userPwConfirm">
+                <div class="item_description">
+                    <span>&#191;</span>
+
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <div class="item_box">
+
+                <p>
+                    <label for="userName">이름</label>
+                </p>
+                <input type="text" id="userName">
+
+            </div>
+
+            <br>
+            <div class="item_box">
+
+                <p>
+                    <label for="birthday">생년월일</label>
+                </p>
+                <input type="text" id="birthday" class="width146" placeholder="년(4자)">
+                <select name="" id="" class="width146">
+                    <option value="">월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="text" class="width146" name="date" placeholder="일">
+
+            </div>
+            <br>
+
+            <div class="item_box">
+
+                <p>
+                    <label for="gender">성별</label>
+                </p>
+
+                <select name="" id="gender" >
+                    <option value="">성별</option>
+                    <option value="man">남자</option>
+                    <option value="woman">여자</option>
+
+                </select>
+
+            </div>
+            <br>
+            <div class="item_box">
+
+                <p>
+                    <label for="selfCheckEmail">본인확인 이메일</label><span class="not_necessary">(선택)</span>
+                </p>
+
+                <input type="text" id="selfCheckEmail">
+
+            </div>
+            <br>
+            <div class="item_box">
+
+                <p>
+                    <label for="phoneNumber">휴대전화</label>
+                </p>
+                <select name="" id="phoneNumber">
+                    <option value="">대한민국 +82</option>
+
+
+                </select>
+                <input type="text" class="width335" placeholder="전화번호 입력">
+                <a href="" class="cert_btn">인증번호받기</a>
+                <input type="text" id="phoneNumber" placeholder="인증번호 입력하세요">
+
+
+
+            <div class="btn_container">
+                <br>
+                <button id="confirmBtn">가입하기</button>
+            </div>
+            <br>
+
+        </div>
+        <!-- content 끝 -->
+
+    </form>
+    <!-- form 끝 -->
+    <!-- footer 시작 -->
+    <div id="footer">
+        <ul>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">책임의 한계와 법적고지</a></li>
+            <li><a href="">회원정보 고객센터</a></li>
+        </ul>
+        <p class="corporation"> © <a href="https://www.navercorp.com/" target="_blank">NAVER Corp.</a>
+        </p>
+
+    </div>
+    <!-- footer 시작 -->
+</div>
+
+<!-- wrapper 끝 -->
+</body>
+</html>

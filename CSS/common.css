@@ -1,0 +1,45 @@
+
+/*초기 설정*/
+html, body { padding: 0; margin: 0;  }
+table { border-collapse: collapse; }
+* { padding: 0; margin: 0;  }
+ul, li { list-style-type: none; padding: 20px 0 20px 0; font-size: 20px; }
+
+/*상단 메뉴 설정*/
+#wrap { max-width: 1800px; margin: auto;    }
+#header { overflow: hidden; padding: 27px 0 27px 0; border-bottom: 4px solid black;      }
+#logo { float: left; margin: 20px 0 0 20px; }
+#gnb { float: right; margin: 20px 20px; }
+#gnb ul li { float: left; padding: 10px 20px;  }
+
+/*폰트 설정*/
+h1 { font-family: 'Black Han Sans', sans-serif; font-weight: lighter; font-size: 45px; }
+li { font-family: 'Black Han Sans', sans-serif; font-size: 37px; }
+
+/*a태그 설정*/
+a { text-decoration: none; color: black; }
+a:hover { color: white; background-color: black; }
+
+/*중간 소개 배너 설정*/
+.banner {position: relative; width: 780px; height: 517px; top: 50px;  margin:0 auto; padding:0; overflow: hidden;}
+.banner ul {position: absolute; margin: 0; padding:0; list-style: none;  }
+.banner ul li {float: left; width: 780px; height: 517px; margin:0; padding:0;}
+#index_content {  font-family: 'Black Han Sans', sans-serif; font-size: 50px; padding-top: 48px; text-align: center;  }
+
+/*나의 장점 3가지 설정*/
+#footer { margin: 10px 10px 20px; padding-left: 10px; padding-top: 30px; padding-bottom: 900px;   }
+#footer .benefits { margin: 10px 5px 10px; text-align: center; }
+#footer h1 { margin: 20px 0 0 0; padding-top: 40px; padding-bottom: 20px;   }
+#footer .benefits ul li { font-size: 24px; display: inline-block; margin: 10px 20px 100px 40px; padding: 30px 4px 0 4px; float: left;
+    width: 480px; height: 380px; font-family: 'Nanum Pen Script', cursive; font-size: 50px;    }
+#footer span { font-size: 34px;  font-family: 'Nanum Pen Script', cursive; }
+
+/*드롭다운 메뉴 설정*/
+ul ul {display: none;}
+ul li:hover > ul {display: block; font-size: 22px; font-weight: lighter;   }
+
+/*daily항목 설정*/
+#daily_content1 { padding-left: 450px; padding-top: 50px; float: left; display: inline; position: center; }
+#dc1 { padding-top: 50px; float: left; display: inline; font-family: 'Nanum Pen Script', cursive; font-size: 50px; }
+#daily_content2 { padding-left: 450px; padding-top: 50px; float: left; display: inline; position: center; }
+#dc2 { padding-top: 50px; float: left; display: inline; font-family: 'Nanum Pen Script', cursive; font-size: 50px; padding-bottom: 70px; }

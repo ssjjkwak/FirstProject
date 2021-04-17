@@ -1,0 +1,266 @@
+
+
+
+<!-- 느낀점 : 경영정보학과의 전공 관련 수업을 들으면서 처음으로 주도적으로 직접 구글링 하며 공부한 과목이 웹어플리케이션이다.
+평소에 프론트엔드에 관심이 많아서 생활코딩같은 영상을 보며 나름 공부를 시도했지만 그것은 수박 겉핥기식이었다는 것을 깨달았다.
+ 교수님의 강의 영상을 보며 함께 w3school을 구현 할 때랑은 다르게 너무 어려웠다.
+ 복습과 연습의 부족함을 절실히 느낀 이번 중간 프로젝트였다.
+ 구체적으로 웹사이트의 대부분이 이미지 파일로 구성되어 있어서 이미지, a태그, border, padding, margin 등의 위치를 맞추는데 애먹었다.
+ 결국 드롭다운 메뉴와 a태그의 위치를 일치 시키는데 실패했다.
+  또한 나의 코딩을 보면 누구나 확인할 수 있듯이 나는 공백태그(&nbsp)와 줄바꿈태그(br)를 남발해서 위치를 맞추고 사이트를 구현했다.
+   그래서 나 자신에게 답답함을 느끼고 부끄러웠다. 그러나 최대한 비슷한 모양과 비슷한 구성을 구현하기 위한 나의 노력이었고 이게 최선이었다...
+   앞으로 연습과 복습으로 html을 손에 익힐 수 있고 문제해결을 어떻게 해 나아갈지 그 능력을 열심히 길러야겠다.  -->
+
+
+<!-- 구현 목표 사이트 : https://www.wooribank.com/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>우리은행</title>
+    <link rel="stylesheet" href="../css/Woori_common.css">
+    <link rel="stylesheet" href="../css/Woori_main.css">
+</head>
+
+
+<body>
+<div id="wrapper">
+
+
+
+    <!-- 상단 메뉴 -->
+    <div id="header">
+        <nav id="topMenu">
+            <ul>
+                <li><img src="../img/h1_01.png" /></li>
+                <li><a class="menuLink1" href=""><img src="../img/로그인.PNG" height="41" width="105"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_2"><a class="per2" href="">개인</a><br>
+                            <a class="per2" href="">기업</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="menuLink2" href=""><img src="../img/공인인증센터.PNG" height="42" width="176"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_2"><a class="per2" href="">개인</a><br>
+                            <a class="per2" href="">기업</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="menuLink3" href=""><img src="../img/개인.png" height="27" width="42"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_2"><a class="per2" href="">개인뱅킹</a><br>
+                        <a class="per3" href="">조회</a><br>
+                        <a class="per3" href="">이체</a><br>
+                        <a class="per3" href="">오픈뱅킹</a><br>
+                        <a class="per3" href="">공과금</a><br>
+                        <a class="per3" href="">예금/신탁</a><br>
+                        <a class="per3" href="">펀드</a><br>
+                        <a class="per3" href="">보험</a><br>
+                        <a class="per3" href="">대출</a><br>
+                        <a class="per3" href="">외환/골드</a><br>
+                        <a class="per3" href="">퇴직연금</a><br>
+                        <a class="per3" href="">뱅킹관리</a><br>
+                        <a class="per3" href="">ISA</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="menuLink4" href=""><img src="../img/기업.png" height="27" width="41"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_2"><a class="per2" href="">기업뱅킹</a><br>
+                            <a class="per3" href="">조회</a><br>
+                            <a class="per3" href="">이체</a><br>
+                            <a class="per3" href="">공과금</a><br>
+                            <a class="per3" href="">전자결제</a><br>
+                            <a class="per3" href="">수표어음</a><br>
+                            <a class="per3" href="">자금관리</a><br>
+                            <a class="per3" href="">얘금/신탁</a><br>
+                            <a class="per3" href="">대출</a><br>
+                            <a class="per3" href="">펀드/보험</a><br>
+                            <a class="per3" href="">외환</a><br>
+                            <a class="per3" href="">퇴직연금</a><br>
+                            <a class="per3" href="">뱅킹관리</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="menuLink5" href=""><img src="../img/자산관리.png" height="27" width="77"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_2"><a class="per2" href="">자산관리</a><br>
+                            <a class="per3" href="">로보/전문가설계</a><br>
+                            <a class="per3" href="">펀드마켓</a><br>
+                            <a class="per3" href="">은퇴설계</a><br>
+                            <a class="per3" href="">재무설계</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="menuLink6" href=""><img src="../img/금융상품.png" height="27" width="78"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_2"><a class="per2" href="">금융상품</a><br>
+                            <a class="per3" href="">추천상품</a><br>
+                            <a class="per3" href="">예금</a><br>
+                            <a class="per3" href="">펀드</a><br>
+                            <a class="per3" href="">대출</a><br>
+                            <a class="per3" href="">외환</a><br>
+                            <a class="per3" href="">골드</a><br>
+                            <a class="per3" href="">신탁</a><br>
+                            <a class="per3" href="">보험</a><br>
+                            <a class="per3" href="">퇴직,연금</a><br>
+                            <a class="per3" href="">시니어+</a><br>
+                            <a class="per3" href="">은퇴설계</a><br>
+                            <a class="per3" href="">ISA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="menuLink7" href=""><img src="../img/카드.png" height="27" width="42"/></a></li>
+                <li><a class="menuLink8" href=""><img src="../img/전체메뉴.png" height="27" width="78"/></a></li>
+                <li><a class="menuLink9" href=""><img src="../img/글로벌.png" height="24" width="82"/></a>
+                    <ul class="sub2">
+                        <li class="sub2_3"><a class="per2" href="">LANGUAGE</a><br>
+                            <a class="per3" href="">English</a><br>
+                            <a class="per3" href="">Chinese(中國語 )</a><br>
+                            <a class="per3" href="">Japanese(日本語)</a><br>
+                            <a class="per3" href="">Filipino(Tagalog)</a><br>
+                            <a class="per3" href="">Vietnamese(tiếng Việt)</a><br>
+                            <a class="per3" href="">Mongolian(Монгол хэл)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="menuLink10" href=""><img src="../img/upper_search_icon.png" /></a></li>
+            </ul>
+
+        </nav>
+        <img class="corona" src="../img/배경화면.png" height="635" width="1080"/>
+    </div>
+
+
+    <!-- 중간 메뉴 -->
+
+    <div id="middleMenu">
+            <div class="middle_index">
+                &nbsp&nbsp&nbsp <a href=""><img  src="../img/조회.png" height="36" width="57"/></a>&nbsp &nbsp ㅣ &nbsp &nbsp
+                <a href=""><img src="../img/이체.png" height="35" width="57"/></a>&nbsp &nbsp ㅣ &nbsp &nbsp
+                <a href=""><img src="../img/환율.png" height="35" width="59"/></a>&nbsp &nbsp ㅣ &nbsp
+                <a href=""><img src="../img/빠른메뉴.png" height="32" width="97"/></a>&nbsp <span class="point">></span>
+            </div>
+
+    </div>
+
+    <div id="middleBottom">
+        <div class="middleBottom_index">
+            <a href="">금융 소비자 보호</a> &nbsp <a href="">보안뉴스</a> &nbsp <a href="">상품/약관 공시</a>
+
+        </div>
+    </div>
+
+    <!-- 금융 상품 -->
+    <div id="financialProduct">
+        <h1>금융상품</h1>
+        <div class="icon">
+            <a href=""><img src="../img/icon_set_01.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_02.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_03.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_04.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_05.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_06.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_07.png" height="82" width="92"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href=""><img src="../img/icon_set_08.png" height="82" width="92"/></a>
+            <h3>
+                예금 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                대출 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                펀드 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                외환 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                신탁 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                퇴직연금 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                보험 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ISA
+            </h3>
+        </div>
+    </div>
+
+    <!--  서비스   -->
+    <div id="service">
+        <h1>서비스</h1>
+        <div class="service_index">
+            <ul>
+                <a href=""><li><img src="../img/서비스1.png" height="200" width="304"/><h2>우리WON뱅킹</h2><br><h3>새 시대의 금융을 켜다,<br> 우리은행 대표 모바일뱅킹 APP</h3></li></a>
+                <a href=""><li><img src="../img/서비스2.png" height="200" width="304"/><h2>원더랜드(구.위비홈즈)</h2><br><h3>우리가 만든<br> 부동산기반 종합자산관리채널</h3></li></a>
+                <a href=""><li><img src="../img/서비스3.png" height="200" width="304"/><h2>스마트간편신규</h2><br><h3>직원에게 추천받으신 상품을<br> 간편하게 가입하세요</h3></li></a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 새소식 및 이벤트 -->
+     <div id="noticeEvent">
+
+        <div id="notice">
+            <div class="notice_index">
+                <div class="notice_index_1">
+                    <h2>새소식</h2><br>
+                    <a href="">더보기 ></a> <span> <a href="">[공지] [코로나19 관련] 대구,경북지역 영업점 영업시간...</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2020.03.06 <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span><a href="">[공지] [코로나19 관련] 비대면 채널 가능 업무...</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2020.03.05 <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span><a href="">[공지] [코로나19 관련] 개인고객 인터넷,스마트뱅킹...</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2020.02.26
+                </div>
+
+            </div>
+        </div>
+
+        <div id="event">
+            <div class="event_index">
+                <div class="event_index_1">
+                    <h2>이벤트</h2><br>
+                    <a href="">더보기 ></a> <span> <a href="">우리WON하는 직장인대출 한도조회 하고 경품 받고!</a> <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="">청약저축 가입하면 푸짐한 선물 쏜다!</a> <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="">온국민환전 [온국민 90% 환율우대 이벤트]</a></span>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- 하단 메뉴 -->
+    <div id="footerBottom">
+
+        <div id="gnb">
+            <ul id="gnbCon">
+                <li><a href="">대표 <span>1588-5000</span> <span class="blue">▲</span></a></li>
+                <li><a href="">기타서비스 <span class="blue">▲</span></a></li>
+                <li><a href="">LANGUAGE <span class="blue">▲</span></a></li>
+                <li><a href="">패밀리사이트 <span class="blue">▲</span></a></li>
+            </ul>
+        </div>
+        <div id="utilMenu">
+            <ul id="utilCon">
+                <li><a href="">FAC</a></li>
+                <li><a href="">INS</a></li>
+                <li><a href="">TUM</a></li>
+                <li><a href="">YUT</a></li>
+                <li><a href="">DAM</a></li>
+                <li><a href="">TWT</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!--  copyright   -->
+    <div id="copyright">
+        <a href="">은행소개</a>  | <a href="">영업점안내</a>  | <a href="">고객광장</a>  |  <span><a href="">개인정보처리방침</a></span>  |
+        <a href="">개인신용정보관리보호</a>  | <a href="">사고신고</a> <br><br>
+        <a href="">전자민원접수</a>  | <a href="">보호금융상품등록부</a>  | <a href="">상품공시실</a>  | <a href="">보안센터</a>  | <a
+            href="">웹접근성 이용안내</a> <br><br>
+
+        COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.
+
+    </div>
+
+</div>
+
+</body>
+</html>

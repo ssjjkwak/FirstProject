@@ -1,0 +1,62 @@
+/* 전체 스타일 */
+
+table {
+    border-color: lightgray;
+    border-style: solid;
+    background-color: #e6e6e6;
+
+}
+td {
+    padding: 40px 135px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-color: gray;
+    border-style: hidden;
+}
+
+/* 버튼 스타일 */
+td.white { background-color: #fafafa; }
+td.gray { background-color: whitesmoke;
+          font-weight: lighter;
+          font-size: 60px;
+}
+
+td.gray2 { background-color: whitesmoke;
+           font-weight: normal;
+           font-size: 40px;
+}
+td.blue { background-color: #A9D0F5;
+          font-size: 60px;
+          font-weight: lighter;
+}
+
+/* 마우스 호버 효과 */
+td.white:hover { background-color: whitesmoke;  }
+td.gray:hover { background-color: white; }
+td.gray2:hover { background-color: white; }
+td.blue:hover { background-color: #006cc1; }
+
+
+/* result 창 및 display 창 스타일 */
+input {
+    text-align: right;
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+
+#display { text-align: right; width: 1045px; height: 120px; font-size: 100px; font-weight: bold; background-color: #e6e6e6;  }
+#result { text-align: right; width: 1045px; height: 120px; font-size: 100px; font-weight: bold; background-color: #e6e6e6;  }
+
+/* 메모리 창 스타일 */
+td.memory { font-size: 25px; }
+td.cal_record { font-size: 25px; }
+
+#memory { text-align: right; width: 215px; height: 120px; font-size: 30px; font-weight: bold; background-color: #e6e6e6;  }
+#memory2 { text-align: right; width: 215px; height: 120px; font-size: 30px; font-weight: bold; background-color: #e6e6e6;  }
+#memory3 { text-align: right; width: 215px; height: 120px; font-size: 30px; font-weight: bold; background-color: #e6e6e6;  }
+#memory4 { text-align: right; width: 215px; height: 120px; font-size: 30px; font-weight: bold; background-color: #e6e6e6;  }
+#memory5 { text-align: right; width: 215px; height: 120px; font-size: 30px; font-weight: bold; background-color: #e6e6e6;  }
+
